@@ -4,7 +4,7 @@ import passwordChecker
 
 class TestPasswordChecker(unittest.TestCase):
     def test_checkpassword_missing_number(self):
-        '''Should check for number'''
+        '''Should check if number is missing'''
         test_missing_number_params = 'sDnded@_'
 
         result = passwordChecker.checkPassword(
@@ -21,7 +21,7 @@ class TestPasswordChecker(unittest.TestCase):
         self.assertEqual(result, False)
 
     def test_checkpassword_incorect_length(self):
-        '''Should check if password lenght ic correct'''
+        '''Should check if password lenght is incorrect'''
 
         test_incorect_length_params = 'sDnde4@'
 
