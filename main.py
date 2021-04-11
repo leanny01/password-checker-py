@@ -1,4 +1,8 @@
 import passwordChecker
 import passwordChecker.test
 
-passwordChecker.register('name', 'surname', '12345678')
+name = input("Please input your name: ")
+surname = input("Please input your surname: ")
+password = input("Please input your password: ")
+passConf = input("Please confirm your password: ")
+passwordChecker.register(name, surname, password, passConf)
