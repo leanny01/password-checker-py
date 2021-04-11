@@ -37,7 +37,13 @@ class TestPasswordChecker(unittest.TestCase):
         result = passwordChecker.checkPassword(
             test_missing_upperCase_params, test_missing_upperCase_params)
         self.assertEqual(result, False)
-    # def test_check
+
+    def test_password_composition(self):
+        '''Should contain 4 * and remaining 4 other character at the end'''
+        test_composition_params = '*dnde4@*'
+        result = passwordChecker.checkPassword(
+            test_composition_params, test_composition_params)
+        self.assertEqual(result, False)
 
 
 unittest.main()
