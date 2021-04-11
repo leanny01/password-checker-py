@@ -1,7 +1,12 @@
 def checkPassword(password, passwordConf):
-    return True
+    # Your code here
 
 
 def displayDetails(name, surname, password, passConf):
+    # Your code here
 
-    return ''
+
+def register(name, surname, password, passConf):
+    checkPassword(password, passwordConf)
+    displayDetails(name, surname, password, passConf)
+    return

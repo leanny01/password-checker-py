@@ -1,3 +1,3 @@
 # password-checker-py
 
-A password checker program for students.
+Password checker startup code for students.
