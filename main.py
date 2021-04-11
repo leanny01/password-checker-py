@@ -1,5 +1,4 @@
 import passwordChecker
-import passwordChecker.test
 
 name = input("Please input your name: ")
 surname = input("Please input your surname: ")
