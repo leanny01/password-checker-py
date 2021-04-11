@@ -21,6 +21,7 @@ class TestPasswordChecker(unittest.TestCase):
         self.assertEqual(result, False)
 
     def test_checkpassword_incorect_length(self):
+        '''Should check if password lenght ic correct'''
 
         test_incorect_length_params = 'sDnde4@'
 
@@ -29,6 +30,7 @@ class TestPasswordChecker(unittest.TestCase):
         self.assertEqual(result, False)
 
     def test_checkpassword_missing_upperCase(self):
+        '''Should check if password is missing uppercase'''
 
         test_missing_upperCase_params = 'sdnde4@_'
 
